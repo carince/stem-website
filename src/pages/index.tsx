@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Inter } from "next/font/google";
-import { PageTransition } from "./animate";
+import { PageTransition } from "../components/animate";
 import { motion } from "framer-motion"
 
 const inter = Inter({ subsets: ["latin"] });
