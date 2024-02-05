@@ -1,99 +1,55 @@
-import Link from "next/link";
-import { Inter } from "next/font/google";
-import { PageTransition } from "../components/animate";
-import { motion } from "framer-motion"
+import { animate, stagger } from "framer-motion"
+import { useEffect } from "react";
 
-const inter = Inter({ subsets: ["latin"] });
+import { PageTransition } from "@/components/animate";
+import Card from "@/components/Card"
+import Button from "@/components/Button"
+import { QuestionMarkCircleIcon, LightBulbIcon, FaceSmileIcon } from "@heroicons/react/24/solid"
 
 export default function Home() {
-  return (
-    <PageTransition>
-      <main
-        className={`w-screen h-screen flex flex-col items-center justify-center space-y-12 ${inter.className}`}
-      >
-        <motion.div
-          className="font-bold text-5xl"
-          initial={{ x: 100, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{
-            delay: 0.1,
-          }}
+    useEffect(() => {
+       animate(".CardContent > .CardTitle, .CardContent > .CardDescription > *",
+            { x: [100, 0], opacity: [0, 1] },
+            { delay: stagger(0.1, { startDelay: 0.25 }) }
+        )
+    })
+
+    return (
+        <main
+            className={`h-screen w-screen flex items-center p-5`}
         >
-          <p>Welcome to</p>
-          <p>STEM!</p>
-        </motion.div>
+            <PageTransition>
+                <Card>
+                    <div className="CardContent flex flex-col items-center space-y-12 p-5">
+                        <h1
+                            className="CardTitle font-bold text-5xl tracking-tight"
+                        >
+                            Welcome to STEM!
+                        </h1>
 
-        <div className="mb-32 flex flex-col space-y-5 text-center">
-          <motion.div
-            className="group rounded-lg border px-5 py-4 border-[rgb(75,101,62)] bg-[rgba(75,101,62,0.3)]"
-            initial={{ x: 100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{
-              delay: 0.2,
-            }}
-          >
-            <Link
-              href="/stem"
-            >
-              <h2 className={`mb-3 text-2xl font-semibold`}>
-                {"About STEM "}
-                <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                  -&gt;
-                </span>
-              </h2>
-              <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-                Find in-depth information about the STEM strand and its subjects.
-              </p>
-            </Link>
-          </motion.div>
-
-          <motion.div
-            className="group rounded-lg border px-5 py-4 border-[rgb(75,101,62)] bg-[rgba(75,101,62,0.3)]"
-            initial={{ x: 100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{
-              delay: 0.25,
-            }}
-          >
-            <Link
-              href="/quiz"
-            >
-              <h2 className={`mb-3 text-2xl font-semibold`}>
-                {"Assessment "}
-                <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                  -&gt;
-                </span>
-              </h2>
-              <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-                Test your knowledge!
-              </p>
-            </Link>
-          </motion.div>
-
-          <motion.div
-            className="group rounded-lg border px-5 py-4 border-[rgb(75,101,62)] bg-[rgba(75,101,62,0.3)]"
-            initial={{ x: 100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{
-              delay: 0.3,
-            }}
-          >
-            <Link
-              href="/about"
-            >
-              <h2 className={`mb-3 text-2xl font-semibold`}>
-                {"About the App "}
-                <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-                  -&gt;
-                </span>
-              </h2>
-              <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-                Additional info regarding this application.
-              </p>
-            </Link>
-          </motion.div>
-        </div>
-      </main>
-    </PageTransition>
-  );
+                        <div className="CardDescription mb-32 space-y-5 text-center flex flex-col ">
+                            <Button
+                                href="/stem"
+                                title="About STEM"
+                                symbol={<QuestionMarkCircleIcon />}
+                                description="Find in-depth information about the STEM strand and its subjects."
+                            />
+                            <Button
+                                href="/quiz"
+                                title="Assessment"
+                                symbol={<LightBulbIcon />}
+                                description="Test your knowledge!"
+                            />
+                            <Button
+                                href="/app"
+                                title="About the App"
+                                symbol={<FaceSmileIcon />}
+                                description="Info about the application."
+                            />
+                        </div>
+                    </div>
+                </Card>
+            </PageTransition >
+        </main>
+    );
 }
