@@ -1,7 +1,8 @@
 import { animate, stagger } from "framer-motion";
 import { useEffect } from "react";
+import Image from "next/image"
 
-import { PageTransition, ScrollReveal } from "@/components/animate";
+import { PageTransition } from "@/components/animate";
 import Footer from "@/components/Footer";
 import Card from "@/components/Card"
 
@@ -19,39 +20,19 @@ export default function AboutAppBlog() {
         >
             <PageTransition>
                 <Card>
+                    <div className="CardMedia w-full">
+                        <Image src="/coding.gif" alt="writing" width={500} height={280} className="w-full" />
+                    </div>
                     <div className="CardContent flex flex-col items-center space-y-5 p-5">
                         <h1
                             className="CardTitle font-bold text-5xl"
                         >
                             About the App!
                         </h1>
-                        <div className="CardDescription">
-                            <ScrollReveal className="space-y-5">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id eu nisl nunc mi. Elit duis tristique sollicitudin nibh sit. Leo urna molestie at elementum. Elementum integer enim neque volutpat ac tincidunt vitae. Nulla facilisi nullam vehicula ipsum a arcu. Faucibus a pellentesque sit amet. Sed odio morbi quis commodo. Morbi leo urna molestie at elementum eu facilisis sed. Quisque non tellus orci ac auctor augue mauris augue. <br />
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id eu nisl nunc mi. Elit duis tristique sollicitudin nibh sit. Leo urna molestie at elementum. Elementum integer enim neque volutpat ac tincidunt vitae. Nulla facilisi nullam vehicula ipsum a arcu. Faucibus a pellentesque sit amet. Sed odio morbi quis commodo. Morbi leo urna molestie at elementum eu facilisis sed. Quisque non tellus orci ac auctor augue mauris augue. <br />
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id eu nisl nunc mi. Elit duis tristique sollicitudin nibh sit. Leo urna molestie at elementum. Elementum integer enim neque volutpat ac tincidunt vitae. Nulla facilisi nullam vehicula ipsum a arcu. Faucibus a pellentesque sit amet. Sed odio morbi quis commodo. Morbi leo urna molestie at elementum eu facilisis sed. Quisque non tellus orci ac auctor augue mauris augue. <br />
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id eu nisl nunc mi. Elit duis tristique sollicitudin nibh sit. Leo urna molestie at elementum. Elementum integer enim neque volutpat ac tincidunt vitae. Nulla facilisi nullam vehicula ipsum a arcu. Faucibus a pellentesque sit amet. Sed odio morbi quis commodo. Morbi leo urna molestie at elementum eu facilisis sed. Quisque non tellus orci ac auctor augue mauris augue. <br />
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id eu nisl nunc mi. Elit duis tristique sollicitudin nibh sit. Leo urna molestie at elementum. Elementum integer enim neque volutpat ac tincidunt vitae. Nulla facilisi nullam vehicula ipsum a arcu. Faucibus a pellentesque sit amet. Sed odio morbi quis commodo. Morbi leo urna molestie at elementum eu facilisis sed. Quisque non tellus orci ac auctor augue mauris augue. <br />
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id eu nisl nunc mi. Elit duis tristique sollicitudin nibh sit. Leo urna molestie at elementum. Elementum integer enim neque volutpat ac tincidunt vitae. Nulla facilisi nullam vehicula ipsum a arcu. Faucibus a pellentesque sit amet. Sed odio morbi quis commodo. Morbi leo urna molestie at elementum eu facilisis sed. Quisque non tellus orci ac auctor augue mauris augue. <br />
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id eu nisl nunc mi. Elit duis tristique sollicitudin nibh sit. Leo urna molestie at elementum. Elementum integer enim neque volutpat ac tincidunt vitae. Nulla facilisi nullam vehicula ipsum a arcu. Faucibus a pellentesque sit amet. Sed odio morbi quis commodo. Morbi leo urna molestie at elementum eu facilisis sed. Quisque non tellus orci ac auctor augue mauris augue. <br />
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id eu nisl nunc mi. Elit duis tristique sollicitudin nibh sit. Leo urna molestie at elementum. Elementum integer enim neque volutpat ac tincidunt vitae. Nulla facilisi nullam vehicula ipsum a arcu. Faucibus a pellentesque sit amet. Sed odio morbi quis commodo. Morbi leo urna molestie at elementum eu facilisis sed. Quisque non tellus orci ac auctor augue mauris augue. <br />
-                                </p>
-                            </ScrollReveal>
+                        <div className="CardDescription space-y-5">
+                            <p>
+                                inamo mit app inventor
+                            </p>
                         </div>
                     </div>
                 </Card>
