@@ -23,7 +23,7 @@ export default function StrandSubject() {
             <PageTransition>
                 <Card>
                     <div className="CardMedia w-full">
-                        <Image src="/writing.gif" alt="writing" width={500} height={280} className="w-full" />
+                        <Image src="/stem-website/writing.gif" alt="writing" width={500} height={280} className="w-full" />
                     </div>
                     <div className="CardContent space-y-5 p-5">
                         <h1

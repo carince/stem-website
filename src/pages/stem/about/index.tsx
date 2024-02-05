@@ -21,7 +21,7 @@ export default function STEMAbout() {
             <PageTransition>
                 <Card>
                     <div className="CardMedia w-full">
-                        <Image src="/studying.gif" alt="studying" width={500} height={280} className="w-full" />
+                        <Image src="/stem-website/studying.gif" alt="studying" width={500} height={280} className="w-full" />
                     </div>
 
                     <div className="CardContent flex flex-col items-center space-y-5 p-5">
