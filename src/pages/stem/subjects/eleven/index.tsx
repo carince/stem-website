@@ -67,6 +67,10 @@ const subjects: { name: string, description: string }[] = [
     {
         name: "KOMMUNIKASYON AT PANANALIKSIK SA WIKA AT KULTURANG PILIPINO",
         description: `The Senior High School course "Kommunikasyon at Pananaliksik sa Wika at Kulturang Pilipino," or KPWKP, seeks to develop students' research and communication abilities while strengthening their understanding of linguistic principles and their sense of cultural belonging as Filipinos.`
+    },
+    {
+        name: "PEH",
+        description: ""
     }
 ]
 
@@ -88,7 +92,7 @@ export default function StrandSubjectBlog() {
                             {
                                 subjects.map((subject, index) => (
                                     <div key={index} className="space-y-2">
-                                        <h3 className="text-3xl">{subject.name}</h3>
+                                        <h3 className="text-3xl uppercase">{subject.name}</h3>
                                         <p>{subject.description}</p>
                                     </div>
                                 ))
