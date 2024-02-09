@@ -11,7 +11,7 @@ export default function Button({ href, title, symbol, description }: { href: str
             <Link
                 href={href}
             >
-                <h2 className={`mb-2 text-2xl font-semibold`}>
+                <h2 className={`mb-1 text-2xl font-semibold`}>
                     {`${title} `}
                     {
                         symbol && (

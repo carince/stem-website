@@ -22,7 +22,7 @@ export default function Home() {
                 <Card>
                     <div className="CardContent flex flex-col items-center space-y-12 p-5">
                         <h1
-                            className="CardTitle font-bold text-5xl tracking-tight text-center"
+                            className="CardTitle font-bold text-4xl tracking-tight text-center"
                         >
                             Welcome to STEM!
                         </h1>

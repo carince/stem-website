@@ -1,22 +1,33 @@
-import { PageTransition, ScrollReveal } from "../../../components/animate";
+import { PageTransition } from "@/components/animate";
+import { useEffect, useState } from "react";
 
 import Footer from "@/components/Footer";
 import Card from "@/components/Card"
 
 export default function StrandVideo() {
+    const [media, setMedia] = useState<undefined | string>(undefined)
+
+    useEffect(() => {
+        if (localStorage.getItem("stem-video") === null) {
+            setMedia(undefined)
+        } else {
+            setMedia(String(localStorage.getItem("stem-video")))
+        }
+    }, [])
+
     return (
         <main
-            className={`w-screen h-screen flex items-center p-5`}
+            className={`w-screen h-screen flex items-center overflow-scroll p-5`}
         >
             <PageTransition>
                 <Card>
                     <div className="CardMedia w-full">
-                    <iframe className="w-full aspect-video" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=1gjoDkdrvo_2w5TF" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                        <iframe src={media} allow="autoplay" allowFullScreen={true} className="aspect-video w-full"></iframe>
                     </div>
 
                     <div className="CardContent space-y-5 p-5">
                         <div
-                            className="CardTitle font-bold text-5xl"
+                            className="CardTitle font-bold text-4xl"
                         >
                             Campaign Video
                         </div>

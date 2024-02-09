@@ -69,8 +69,8 @@ const subjects: { name: string, description: string }[] = [
         description: `The Senior High School course "Kommunikasyon at Pananaliksik sa Wika at Kulturang Pilipino," or KPWKP, seeks to develop students' research and communication abilities while strengthening their understanding of linguistic principles and their sense of cultural belonging as Filipinos.`
     },
     {
-        name: "PEH",
-        description: ""
+        name: "PHYSICAL EDUCATION AND HEALTH",
+        description: "Physical Education and Health is a subject that specializes in the improvement of students physical activity, health, and overall being. This subject also promotes a healthy and active lifestyle that may help students through the knowledge and skills taught."
     }
 ]
 
@@ -84,7 +84,7 @@ export default function StrandSubjectBlog() {
                     <div className="CardContent flex flex-col items-center space-y-12 p-5">
                         <div className="space-y-5">
                             <div
-                                className="CardTitle font-bold text-5xl"
+                                className="CardTitle font-bold text-4xl"
                             >
                                 Grade 11 Subjects
                             </div>

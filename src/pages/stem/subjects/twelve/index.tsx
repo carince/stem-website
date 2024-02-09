@@ -1,4 +1,4 @@
-import { PageTransition, ScrollReveal } from "@/components/animate";
+import { PageTransition } from "@/components/animate";
 
 import Footer from "@/components/Footer";
 import Card from "@/components/Card";
@@ -43,6 +43,10 @@ const subjects: { name: string, description: string }[] = [
     {
         name: "Pananaliksik Pagbabasa at Pagsusuri ng Iba’t Ibang Teksto Tungo sa Pananaliksik",
         description: "Pananaliksik Pagbabasa at Pagsusuri ng Iba’t Ibang Teksto Tungo sa Pananaliksik or PPITTP is one of the minor subjects in STEM during the first semester of senior high school. In this subject they will tackle the different types of texts, reading and  analyzing different texts, and writing research."
+    },
+    {
+        name: "Biochemistry",
+        description: "The use of chemistry to investigate biological processes at the cellular and molecular levels is known as biochemistry. When scientists joined biology, physiology, and chemistry to study the chemistry of living systems, it became a separate field of study around the start of the 20th century."
     }
 ]
 
@@ -56,7 +60,7 @@ export default function StrandSubjectBlog() {
                     <div className="CardContent flex flex-col items-center space-y-12 p-5">
                         <div className="space-y-5">
                             <div
-                                className="CardTitle font-bold text-5xl"
+                                className="CardTitle font-bold text-4xl"
                             >
                                 Grade 12 Subjects
                             </div>

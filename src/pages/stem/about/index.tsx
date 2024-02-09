@@ -26,12 +26,12 @@ export default function STEMAbout() {
 
                     <div className="CardContent flex flex-col items-center space-y-5 p-5">
                         <h1
-                            className="CardTitle font-bold text-5xl"
+                            className="CardTitle font-bold text-3xl"
                         >
                             Science, Technology, Engineering, Mathematics
                         </h1>
                         <p className="CardDescription">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id eu nisl nunc mi. Elit duis tristique sollicitudin nibh sit. Leo urna molestie at elementum. Elementum integer enim neque volutpat ac tincidunt vitae. Nulla facilisi nullam vehicula ipsum a arcu. Faucibus a pellentesque sit amet. Sed odio morbi quis commodo. Morbi leo urna molestie at elementum eu facilisis sed. Quisque non tellus orci ac auctor augue mauris augue. <br />
+                        STEM stands for Science, Technology, Engineering, and Mathematics and it is an interdisciplinary strand that can enhance students critical thinking, problem solving skills, creative thinking, and innovation. As it contains multiple subjects, it can prepare students for a wide variety of careers and complex challenges in their respective fields.
                         </p>
                     </div>
                 </Card>

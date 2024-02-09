@@ -24,7 +24,7 @@ export default function StrandHome() {
                 <Card>
                     <div className="CardContent flex flex-col items-center space-y-12 p-5">
                         <div
-                            className="CardTitle font-bold text-5xl"
+                            className="CardTitle font-bold text-4xl"
                         >
                             Science, Technology, Engineering, Mathematics
                         </div>
@@ -46,12 +46,6 @@ export default function StrandHome() {
                                 title="Subjects"
                                 symbol={(<ClipboardDocumentListIcon />)}
                                 description="Watch our strand campaign video!"
-                            />
-                            <Button
-                                href="/stem/sources"
-                                title="Sources"
-                                symbol={(<ClipboardDocumentListIcon />)}
-                                description="Sources we used to create the app!"
                             />
                         </div>
                     </div>

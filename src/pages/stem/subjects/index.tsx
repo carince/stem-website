@@ -27,7 +27,7 @@ export default function StrandSubject() {
                     </div>
                     <div className="CardContent space-y-5 p-5">
                         <h1
-                            className="CardTitle font-bold text-5xl"
+                            className="CardTitle font-bold text-4xl"
                         >
                             STEM Subjects
                         </h1>
