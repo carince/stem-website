@@ -19,7 +19,7 @@ export default function StrandVideo() {
         <main
             className={`w-screen h-screen flex items-center overflow-scroll p-5`}
         >
-            <PageTransition>
+            <PageTransition className="grow">
                 <Card>
                     <div className="CardMedia w-full">
                         <iframe src={media} allow="autoplay" allowFullScreen={true} className="aspect-video w-full"></iframe>
@@ -33,7 +33,7 @@ export default function StrandVideo() {
                         </div>
 
                         <div className="CardDescription mb-32 flex flex-col space-y-5">
-                            We hope you like our strand video!
+                            Our strand campaign video showcases the exciting hands-on experiments, engaging group activities, and inspiring testimonials from STEM students. This video highlights the applications and real-world impact of the STEM strand, encouraging incoming senior high school students to explore this dynamic field.
                         </div>
                     </div>
                 </Card>
