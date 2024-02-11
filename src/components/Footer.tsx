@@ -18,7 +18,7 @@ export default function Footer({ href, text }: { href: Url, text: string }) {
             exit={{ y: 75, opacity: 0 }}
         >
             <div className="flex flex-row items-center space-x-3">
-                <Image src="/stem-website/dancing-cat.gif" width={34} height={34} alt="dancing cat"/>
+                <Image src="/dancing-cat.gif" width={34} height={34} alt="dancing cat"/>
                 <h1
                     className="pl-1 text-fg1 font-mono"
                 >
