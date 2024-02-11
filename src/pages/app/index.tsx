@@ -1,10 +1,12 @@
 import { animate, stagger } from "framer-motion";
 import { useEffect, useState } from "react";
 import Image from "next/image"
+import { QuestionMarkCircleIcon } from "@heroicons/react/24/solid"
 
 import { PageTransition } from "@/components/animate";
 import Footer from "@/components/Footer";
 import Card from "@/components/Card"
+import Button from "@/components/Button"
 
 export default function AboutAppBlog() {
     const [media, setMedia] = useState<string>("")
@@ -35,8 +37,11 @@ export default function AboutAppBlog() {
                         >
                             About the App!
                         </h1>
-                        <p className="CardDescription space-y-5">
-                            {content}
+                        <p className="CardDescription flex flex-col space-y-5">
+                            {content} <br />
+                            <div className="flex flex-row justify-evenly space-x-5 text-center">
+                                <Button href="/app/form" title="Suggestions" description="Answer our survey form to help us improve our app!" symbol={<QuestionMarkCircleIcon />}/>
+                            </div>
                         </p>
                     </div>
                 </Card>

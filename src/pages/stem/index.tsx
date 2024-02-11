@@ -6,7 +6,7 @@ import { PageTransition } from "@/components/animate";
 import Card from "@/components/Card";
 import Footer from "@/components/Footer";
 import Button from "@/components/Button";
-import { QuestionMarkCircleIcon, VideoCameraIcon, ClipboardDocumentListIcon } from "@heroicons/react/24/solid"
+import { QuestionMarkCircleIcon, VideoCameraIcon, ClipboardDocumentListIcon, GlobeAltIcon } from "@heroicons/react/24/solid"
 
 export default function StrandHome() {
     useEffect(() => {
@@ -46,6 +46,12 @@ export default function StrandHome() {
                                 title="Subjects"
                                 symbol={(<ClipboardDocumentListIcon />)}
                                 description="Watch our strand campaign video!"
+                            />
+                            <Button
+                                href="/stem/sources"
+                                title="Sources"
+                                symbol={(<GlobeAltIcon />)}
+                                description="Sources we used for creating the app!"
                             />
                         </div>
                     </div>
