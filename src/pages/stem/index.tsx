@@ -33,7 +33,7 @@ export default function StrandHome() {
                                 href="/stem/about"
                                 title="About STEM"
                                 symbol={(<QuestionMarkCircleIcon />)}
-                                description="What is STEM exactly? 🤔😱"
+                                description="What is STEM exactly?"
                             />
                             <Button
                                 href="/stem/video"
