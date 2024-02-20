@@ -69,8 +69,12 @@ const subjects: { name: string, description: string }[] = [
         description: `The Senior High School course "Kommunikasyon at Pananaliksik sa Wika at Kulturang Pilipino," or KPWKP, seeks to develop students' research and communication abilities while strengthening their understanding of linguistic principles and their sense of cultural belonging as Filipinos.`
     },
     {
-        name: "PHYSICAL EDUCATION AND HEALTH",
-        description: "Physical Education and Health is a subject that specializes in the improvement of students physical activity, health, and overall being. This subject also promotes a healthy and active lifestyle that may help students through the knowledge and skills taught."
+        name: "PHYSICAL EDUCATION AND HEALTH 1",
+        description: "Physical Education and Health 1 is a subject that specializes in the improvement of students physical activity, health, and overall being. This subject also promotes a healthy and active lifestyle that may help students through the knowledge and skills taught."
+    },
+    {
+        name: "PHYSICAL EDUCATION AND HEALTH 2",
+        description: "Physical Education and Health 2 is a subject that specializes in individual and dual sports, showcasing the student's skills in sports that range from board games, team sports, to extreme sports."
     }
 ]
 
